@@ -10,7 +10,7 @@ def gitdeploy(jobname,ip,name)
 {
     sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ip}:/var/lib/tomcat9/webapps/${name}.war"
 }
-def gitexec()
+def gitexec(jobname)
 {
     sh "java -jar /var/lib/jenkins/workspace/${jobname}/testing.jar"
 }
