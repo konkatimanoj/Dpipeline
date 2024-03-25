@@ -4,5 +4,5 @@ def gitDownload(repo)
 }
 def gitbuild()
 {
-    sh "mvn pacakage"
+    sh "mvn package"
 }
